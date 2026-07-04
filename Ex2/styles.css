@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+/* TOP SECTION */
+
+.top_page {
+    background-color: #A1CBD7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.images_triple_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.images_triple_top img {
+    width: 140px;
+    height: auto;
+}
+
+#sun {
+    width: 150px;
+}
+
+.top_page h1 {
+    color: white;
+    margin: 10px 0;
+    font-size: 42px;
+}
+
+.hamster_top {
+    width: 220px;
+    margin-top: 25px;
+    transition: transform 0.3s ease;
+}
+
+.hamster_top:hover {
+    transform: scale(1.08);
+}
+
+/* CENTER SECTION */
+
+.center_page {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.center_page h1 {
+    color: darkslategrey;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+.center_page h2 {
+    margin: 10px 0;
+}
+
+.page_break {
+    width: 90px;
+    border: none;
+    border-top: 5px dotted #A1CBD7;
+    margin: 35px 0;
+}
+
+/* HOBBIES */
+
+.hobby_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+
+    width: 80%;
+    max-width: 850px;
+    margin-bottom: 70px;
+}
+
+.hobby_text {
+    width: 320px;
+    text-align: center;
+}
+
+.hobby_text h2 {
+    font-size: 30px;
+    color: #222;
+}
+
+.hobby_text p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.hobby_photo {
+    width: 240px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 22px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobby_photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+/* CONTACT */
+
+.contact {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.contact h1 {
+    margin-bottom: 15px;
+}
+
+.contact p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    color: white;
+    background-color: cornflowerblue;
+    padding: 12px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #7FB3C2;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+
+.bottom_page {
+    background-color: #A1CBD7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 20px 25px;
+    text-align: center;
+}
+
+.footer_link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 8px 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer_link:hover {
+    color: #2f5f6b;
+}
+
+.copyright {
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .top_page {
+        min-height: 70vh;
+        padding: 30px 15px;
+    }
+
+    .top_page h1 {
+        font-size: 30px;
+    }
+
+    .images_triple_top {
+        gap: 12px;
+    }
+
+    .images_triple_top img {
+        width: 90px;
+    }
+
+    #sun {
+        width: 100px;
+    }
+
+    .hamster_top {
+        width: 170px;
+    }
+
+    .center_page {
+        padding: 45px 15px;
+    }
+
+    .center_page h1 {
+        font-size: 32px;
+    }
+
+    .hobby_section {
+        flex-direction: column;
+        gap: 25px;
+        width: 90%;
+        margin-bottom: 60px;
+    }
+
+    .hobby_text {
+        width: 100%;
+    }
+
+    .hobby_text h2 {
+        font-size: 26px;
+    }
+
+    .hobby_photo {
+        width: 260px;
+        height: 170px;
+    }
+
+    .contact p {
+        font-size: 16px;
+    }
+
+    .footer_link {
+        display: block;
+        margin: 10px 0;
+    }
+}
